@@ -7,12 +7,14 @@
   <title>Emirate Engineering</title>
   <link rel="stylesheet" href="style.css">
   <link href="../../output.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 
 <!--  Header start here-->
 
-    <header class=" overflow-hidden" style="background-image: url(../../images/aircraftmaintenance-bg.jpg); background-repeat: no-repeat; background-size: cover;">
+    <header class=" overflow-hidden" style="background-image: url(../../images/aircraftmaintenance-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: bottom;">
         <nav
         class="flex w-full items-center justify-between container lg:justify-evenly z-30 top-0 bg-transparent px-4 md:px-8 lg:px-12 xl:px-5"
       >
@@ -22,7 +24,7 @@
 
         <div class="flex items-center gap-4">
           <div class="bg-transparent p-2  lg:hidden" onclick="openNav()">
-            <img src="../../images/icon-hamburger.svg" alt="Hamburger image" />
+            <ion-icon name="menu-outline" class="text-white text-6xl"></ion-icon>
           </div>
         </div>
         <!-- Desktop Navigation -->
@@ -83,7 +85,7 @@
             class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48"
           >
             <a href="javascript:void(0)" onclick="exitNav()"
-              ><img src="./images/icon-close.svg" alt="Close logo"
+              ><img src="../../images/icon-close.svg" alt="Close logo"
             /></a>
           </div>
 
@@ -143,7 +145,7 @@
         id="sideBar"
         class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10"
       ></div>
-      <div class="grid gap-5 px-5 md:px-14 md:pt-60 pb-20 pt-96">
+      <div class="grid gap-5 px-5 md:px-14 md:pt-60 pb-20 pt-72">
         <h1 class="text-white text-4xl">Aircraft Maintenance</h1>
         <p class="text-white text-sm md:w-[600px]">Full support for emirates fleet, and other airlines, from state-of-the-art facility in Dubai and at outstations across the world</p>
         <a href="../../Engineering-Equipment.html" class="">
@@ -155,10 +157,10 @@
 <!-- Header ends here -->
 
 
-        <section class="bg-white px-5 md:px-10">
-            <div class="space-y-5 py-20">
+        <section class="bg-white px-5 xl:px-52">
+            <div class=" py-20 md:space-y-10">
               <!-- line Maintenance -->
-              <div class="grid md:grid-cols-2 md:text-end gap-10 py-10 pt-10">
+              <div class="grid md:grid-cols-2 md:text-end gap-10">
                 
                 <div class="flex-col space-y-5 flex md:items-end justify-center">
                   <h1 class="text-3xl">Line Maintenance</h1>
@@ -177,7 +179,7 @@
                 </div>
               </div>
               <!-- BASE MAINTENANCE  -->
-              <div class="grid md:grid-cols-2 gap-10 py-10">
+              <div class="grid md:grid-cols-2 gap-10 pb-20  ">
                 <div>
                   <img src="../../images/base-maintenance.jpg" alt="" class="md:w-[500px] md:h-[250px] hidden md:flex">
                 </div>
@@ -196,7 +198,7 @@
                 
               </div>
               <!-- Overhaul workshops -->
-              <div class="grid md:grid-cols-2 md:text-end gap-10 py-10 pt-10">
+              <div class="grid md:grid-cols-2 md:text-end gap-10">
                 
                 <div class="flex-col space-y-5 flex md:items-end justify-center">
                   <h1 class="text-3xl">Overhaul Workshops</h1>
@@ -215,7 +217,7 @@
                 </div>
               </div>
               <!-- engine maintenance centre -->
-              <div class="grid md:grid-cols-2 gap-10 py-10">
+              <div class="grid md:grid-cols-2 gap-10 pb-20">
                 <div>
                   <img src="../../images/engine-mainteneace.jpg" alt="" class="md:w-[500px] md:h-[250px] hidden md:flex">
                 </div>
@@ -234,7 +236,7 @@
                 
               </div>
               <!-- engine test call -->
-              <div class="grid md:grid-cols-2 md:text-end gap-10 py-10 pt-10">
+              <div class="grid md:grid-cols-2 md:text-end gap-10">
                 
                 <div class="flex-col space-y-5 flex md:items-end justify-center">
                   <h1 class="text-3xl">Engine Test Cell</h1>
@@ -253,7 +255,7 @@
                 </div>
               </div>
               <!-- aircraft Apperance centre -->
-              <div class="grid md:grid-cols-2 gap-10 py-10">
+              <div class="grid md:grid-cols-2 gap-10 ">
                 <div>
                   <img src="../../images/aircraft-centre.jpg" alt="" class="md:w-[500px] md:h-[250px] hidden md:flex">
                 </div>
