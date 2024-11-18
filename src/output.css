@@ -715,6 +715,10 @@ video {
   height: 100vh;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -807,6 +811,10 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 
 .bg-\[\#3d3d3d\] {
