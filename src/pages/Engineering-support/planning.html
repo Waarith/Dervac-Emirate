@@ -7,239 +7,147 @@
   <title>Emirate Engineering</title>
   <link rel="stylesheet" href="style.css">
   <link href="../../output.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
 </head>
 <body class="">
 
 <!--  Header start here-->
+<header class=" overflow-hidden bg-[#3d3d3d] w-full">
+  <nav
+  class="flex w-full items-center justify-between container lg:justify-around  z-30 top-0  px-4 md:px-8 lg:px-12 xl:px-5 lg:py-8"
+>
+  <a href="./index.html" class="flex items-center ">
+    <img src="../../images/emirate-logo.svg" alt="logo" class=" lg:absolute top-0 z-10" />
+  </a>
 
-    <header class=" overflow-hidden bg-[#3d3d3d] w-full">
-        <nav
-        class="flex w-full items-center justify-between container lg:justify-around  z-30 top-0  px-4 md:px-8 lg:px-12 xl:px-5 lg:py-8"
-      >
-        <a href="./index.html" class="flex items-center ">
-          <img src="../../images/emirate-logo.svg" alt="logo" class=" lg:absolute top-0 z-10" />
-        </a>
-
-        <div class="flex items-center gap-4">
-          <div class="bg-transparent p-2  lg:hidden" onclick="openNav()">
-            <img src="../../images/icon-hamburger.svg" alt="Hamburger image" />
-          </div>
-        </div>
-        <!-- Desktop Navigation -->
-        <ul
-          class="hidden lg:flex lg:text-lg lg:items-center lg:gap-10 font-sans font-medium lg:ml-8 xl:gap-8">
-
-          <li class="relative group text-white p-2">
-            <a href="./pages/Aircraft-maintainance/aircraft.html" class="">Aircraft Maintenance</a>
-            <!-- Dropdown -->
-            <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-52">
-              <li><a href="./pages/Aircraft-maintainance/line.html" class="block text-sm px-4 py-4 ">Line Maintenance</a></li>
-              <li><a href="./pages/Aircraft-maintainance/base.html" class="block text-sm px-4 py-4 ">Base Maintenance</a></li>
-              <li><a href="./pages/Aircraft-maintainance/Overhaul.html" class="block text-sm px-4 py-4 ">Overhaul workshops</a></li>
-              <li><a href="./pages/Aircraft-maintainance/Maintenance.html" class="block text-sm px-4 py-4 ">Engine Maintenance center</a></li>
-              <li><a href="./pages/Aircraft-maintainance/Text.html" class="block text-sm px-4 py-4 ">Engine Text cell</a></li>
-              <li><a href="./pages/Aircraft-maintainance/Apperance.html" class="block text-sm px-4 py-4 ">Aircraft Apperance center</a></li>
-            </ul>
-          </li>
-
-          <li class="relative group text-white p-2">
-            <a href="./pages/Engineering-support/support.html" class="">Engineering Support</a>
-            <!-- Dropdown -->
-            <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-72">
-                <li><a href="./pages/Engineering-support/materials.html" class="block text-sm px-4 py-4 ">Engineering Materials Management</a></li>
-                <li><a href="./pages/Engineering-support/aircraft.html" class="block text-sm px-4 py-4 ">Engineering Aircraft Procurement</a></li>
-                <li><a href="./pages/Engineering-support/project.html" class="block text-sm px-4 py-4 ">Engineering Projects</a></li>
-                <li><a href="./pages/Engineering-support/training.html" class="block text-sm px-4 py-4 ">Engineering Training</a></li>
-                <li><a href="./pages/Engineering-support/technical.html" class="block text-sm px-4 py-4 ">Engineering Technical Services</a></li>
-                <li><a href="./pages/Engineering-support/planning.html" class="block text-sm px-4 py-4 ">Engineering Planning & IT Systems</a></li>
-                <li><a href="./pages/Engineering-support/facilities.html" class="block text-sm px-4 py-4 ">Engineering Facilities</a></li>
-              </ul>
-          </li>
-          
-          <li class="relative group text-white p-2">
-            <a href="./pages/Compliance Monitoring/compliance-monitoring.html" class="">Compliance Monitoring</a>
-            <!-- Dropdown -->
-            <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-80">
-                <li><a href="./pages/Compliance Monitoring/department.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Department</a></li>
-                <li><a href="./pages/Compliance Monitoring/engineering.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Engineering</a></li>
-                <li><a href="./pages/Compliance Monitoring/regulatory-affairs.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Regulatory Affairs</a></li>
-                <li><a href="./pages/Compliance Monitoring/certification.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Certification</a></li>
-              </ul>
-          </li>
-          <li class="text-white p-2">
-            <a href="./Engineering-Equipment.html">Engineering Equipiment</a>
-          </li>
-          <li class="text-white p-2">
-            <a href="./careers.html">Careers</a>
-          </li>
-        </ul>
-        <!-- End of Desktop Navigation -->
-        <div
-          id="sideNav"
-          class="fixed top-0 right-0 bg-gray-600 w-0 h-full flex overflow-x-hidden duration-500 z-10 lg:hidden"
-        >
-          <div
-            class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48"
-          >
-            <a href="javascript:void(0)" onclick="exitNav()"
-              ><img src="../../images/icon-close.svg" alt="Close logo"
-            /></a>
-          </div>
-
-          <!-- Mobile Navigation -->
-          <nav class="container">
-            <ul class="text-center flex flex-col items-center text-2xl font-sans mt-36 sm:text-3xl ">
-                <li class="relative z-20 group text-white p-2">
-                    <a href="./pages/Aircraft-maintainance/aircraft.html" class="">Aircraft Maintenance</a>
-                    <!-- Dropdown -->
-                    <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-52">
-                      <li><a href="./pages/Aircraft-maintainance/line.html" class="block text-sm px-4 py-4 ">Line Maintenance</a></li>
-                      <li><a href="./pages/Aircraft-maintainance/base.html" class="block text-sm px-4 py-4 ">Base Maintenance</a></li>
-                      <li><a href="./pages/Aircraft-maintainance/Overhaul.html" class="block text-sm px-4 py-4 ">Overhaul workshops</a></li>
-                      <li><a href="./pages/Aircraft-maintainance/Maintenance.html" class="block text-sm px-4 py-4 ">Engine Maintenance center</a></li>
-                      <li><a href="./pages/Aircraft-maintainance/Text.html" class="block text-sm px-4 py-4 ">Engine Text cell</a></li>
-                      <li><a href="./pages/Aircraft-maintainance/Apperance.html" class="block text-sm px-4 py-4 ">Aircraft Apperance center</a></li>
-                    </ul>
-                  </li>
-        
-                  <li class="relative z-10 group text-white p-2">
-                    <a href="./pages/Engineering-support/support.html" class="">Engineering Support</a>
-                    <!-- Dropdown -->
-                    <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-72">
-                        <li><a href="./pages/Engineering-support/materials.html" class="block text-sm px-4 py-4 ">Engineering Materials Management</a></li>
-                        <li><a href="./pages/Engineering-support/aircraft.html" class="block text-sm px-4 py-4 ">Engineering Aircraft Procurement</a></li>
-                        <li><a href="./pages/Engineering-support/project.html" class="block text-sm px-4 py-4 ">Engineering Projects</a></li>
-                        <li><a href="./pages/Engineering-support/training.html" class="block text-sm px-4 py-4 ">Engineering Training</a></li>
-                        <li><a href="./pages/Engineering-support/technical.html" class="block text-sm px-4 py-4 ">Engineering Technical Services</a></li>
-                        <li><a href="./pages/Engineering-support/planning.html" class="block text-sm px-4 py-4 ">Engineering Planning & IT Systems</a></li>
-                        <li><a href="./pages/Engineering-support/facilities.html" class="block text-sm px-4 py-4 ">Engineering Facilities</a></li>
-                      </ul>
-                  </li>
-                  
-                  <li class="relative group text-white p-2">
-                    <a href="./pages/Compliance Monitoring/compliance-monitoring.html" class="">Compliance Monitoring</a>
-                    <!-- Dropdown -->
-                    <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-80">
-                        <li><a href="./pages/Compliance Monitoring/department.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Department</a></li>
-                        <li><a href="./pages/Compliance Monitoring/engineering.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Engineering</a></li>
-                        <li><a href="./pages/Compliance Monitoring/regulatory-affairs.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Regulatory Affairs</a></li>
-                        <li><a href="./pages/Compliance Monitoring/certification.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Certification</a></li>
-                      </ul>
-                  </li>
-                  <li class="text-white p-2">
-                    <a href="./Engineering-Equipment.html">Engineering Equipiment</a>
-                  </li>
-                  <li class="text-white p-2">
-                    <a href="./careers.html">Careers</a>
-                  </li>
-            </ul>
-          </nav>
-        </div>
-      </nav>
-
-      <div
-        onclick="exitNav()"
-        id="sideBar"
-        class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10"
-      ></div>
-        
-    </header>
-  <!-- Header ends here -->
-
-  <div class="bg-slate-100 pt-32 pb-20 pl-52">
-    <h1 class="text-4xl font-bold">Engineering Planning and IT Systems</h1>
-
-    <div class="text-[#707070] flex mt-10 space-x-10">
-      <h1>Engineering Planning provides comprehensive planning services to the highest <br> standards ensuring efficient scheduling, administration, monitoring and control <br> of all maintenance activities.</h1>
-      <h1>IT Systems provide functional support of all applications in use within Emirates <br> Engineering department and ensures that new systems are implemented to <br> provide efficient and effective support of the engineering process.</h1>
+  <div class="flex items-center gap-4">
+    <div class="bg-transparent p-2  lg:hidden" onclick="openNav()">
+      <img src="../../images/icon-hamburger.svg" alt="Hamburger image" />
     </div>
-
-    <button class="text-white font-bold mt-10 p-4 px-7 bg-[#d71920] hover:text-[#d71920] hover:bg-white">CONTACT US</button>
   </div>
+  <!-- Desktop Navigation -->
+  <ul
+    class="hidden lg:flex lg:text-lg lg:items-center lg:gap-10 font-sans font-medium lg:ml-8 xl:gap-8"
+>
 
-    <div class="flex justify-center space-x-24 pt-24">
-      <div class="font-bold text-[#707070] space-y-3">
-        <h1><a href="./support.html">Engineering Materials Management</a></h1>
-        <h1>Engineering Aircraft Procurement</h1>
-        <h1>Engineering Projects</h1>
-        <h1>Engineering Training</h1>
-        <h1>Engineering Technical Services</h1>
-        <h1 class="text-[#d71920]"><a href="./planning.html">Engineering Planning & IT Systems</a></h1>
-        <h1>Engineering Facilities</h1>
-      </div>
+    <li class="relative group text-white p-2">
+      <a href="./pages/Aircraft-maintainance/aircraft.html" class="">Aircraft Maintenance</a>
+      <!-- Dropdown -->
+      <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-52">
+        <li><a href="./pages/Aircraft-maintainance/line.html" class="block text-sm px-4 py-4 ">Line Maintenance</a></li>
+        <li><a href="./pages/Aircraft-maintainance/base.html" class="block text-sm px-4 py-4 ">Base Maintenance</a></li>
+        <li><a href="./pages/Aircraft-maintainance/Overhaul.html" class="block text-sm px-4 py-4 ">Overhaul workshops</a></li>
+        <li><a href="./pages/Aircraft-maintainance/Maintenance.html" class="block text-sm px-4 py-4 ">Engine Maintenance center</a></li>
+        <li><a href="./pages/Aircraft-maintainance/Text.html" class="block text-sm px-4 py-4 ">Engine Text cell</a></li>
+        <li><a href="./pages/Aircraft-maintainance/Apperance.html" class="block text-sm px-4 py-4 ">Aircraft Apperance center</a></li>
+      </ul>
+    </li>
 
-      <div>
-        <h1 class="text-[#707070]">Engineering Planning & IT Systems consists of the following four departments:</h1>
-
-        <h1 class="text-4xl font-medium mt-3">Asset Life Cycle Management</h1>
-
-        <h1 class="text-[#707070] mt-5">ALCM is responsible for ensuring compliance with regulatory authority regulations from the point a new <br> aircraft is delivered   to Emirates, right the way through to when that aircraft is returned to the organisation <br> that owns it (Lessor). It does this by ensuring it maintains the  highest standard of data quality and aircraft <br> records. It is responsible for the inputting of technical data, the transaction of components replaced on <br>  each aircraft, digitally scanning every single sheet of documentation, and making it available electronically, <br> for the rest of the organisation to use and  refer to.
-        </h1>
-
-        <h1 class="text-[#707070] mt-5">It is responsible for ensuring the continued airworthiness of the Emirates fleet and it does this by <br> constantly auditing all   the data it retains, producing and verifying reports that are used for production of <br> Airworthiness Release Certificates for each aircraft. It also verifies  every single transaction conducted, has <br> the responsibility of managing landing gear overhaul programs and ensuring engines returning from shop <br> visits  will meet intended return conditions when handed back to the owners. It also manages the return of <br> the aircraft/engines at the end of their Lease periods. A  dedicated Team ensures that every return <br> condition, set out in the Lease agreement, is fulfilled by Emirates without financial penalty.</h1>
-
-        <h1 class="text-[#707070] mt-5">ALCM personnel work 365 days of the year. They are highly skilled and they play a pivotal role in ensuring <br> continued   airworthiness is maintained right across the fleet of EK aircraft.</h1>
-
-
-        <h1 class="text-4xl font-medium mt-14">Operational Planning</h1>
-
-        <h1 class="text-[#707070] mt-5">The Operational Planning section consists of Aircraft Scheduling, Line Planning, Line Support Planning, Base <br> Operations  Planning, Base Heavy Planning and Projects teams.</h1>
-
-        <h1 class="text-[#707070] mt-5">Operational Planning are responsible for ensuring available aircraft ground-time in direct coordination with <br> work scoping,   planning functions and processes and packaging control for all scheduled maintenance <br> ground-time for its maintenance teams in Line Maintenance, Line Support   Maintenance, Base Operations <br> and Base Heavy Maintenance with the major functions:</h1>
-
-        <li class="text-[#707070] mt-3">Aircraft Scheduling:</li>
-        <h1 class="text-[#707070] mt-5">Determine long-range, medium-range and short range plans, steer budget decisions and dictate the <br> ground time required to   accomplish maintenance work, with the minimum disruption to the flight <br> schedule. It plays a vital role in planning maintenance slots with Line maintenance,  <br> Base maintenance and third parties for all Emirates fleet.</h1>
-
-        <li class="text-[#707070] mt-5">Work scoping:</li>
-        <h1 class="text-[#707070] mt-5">Responsible for the definition of scheduled work packages which produce consistent packages of work <br> to the production  departments to allow accurate forward planning of hangar workspace and the <br> associated manpower requirements to complete all maintenance required at the   optimum time. Review, <br> plan and work scope maintenance requirements for execution, balance scheduled work load within <br> given maintenance capacity   constraints along with timely issuance and control of work packages to <br> maintenance teams.</h1>
-
-        <li class="text-[#707070] mt-5">Modification Planning:</li>
-
-        <h1 class="text-[#707070] mt-5">Provide vital planning and support services so that maintenance teams can carry out smooth, effective <br> maintenance and repair   on the Emirates fleet, ensuring minimum aircraft ground time, undisrupted <br> workflow and optimum turnaround time. This can be as simple as adding a new model  of soap <br> dispenser to the lavatories or completing major structural improvements to sections of the aircraft that <br> have been found susceptible to fatigue  or age related structural defects that may have been discovered <br> during the life of the aircraft. Liaison with manufacturer’s working parties for modification   support is <br> also a vital function of this cell. Liaison with the Materials Management Section to ensure parts and tools <br> required to support the  modification campaign are planned to be available to meet the modification <br> timeline.</h1>
-
-        <li class="text-[#707070] mt-5">Special Projects:</li>
-
-        <h1 class="text-[#707070] mt-5">Support for specific activities such as the workscoping of End of Lease aircraft workpackages and <br> management of outsourced   aircraft maintenance and the planning and management of aircraft in <br> parking or storage condition.</h1>
-
-        <h1 class="text-4xl font-medium mt-16">Reliability</h1>
-
-        <h1 class="text-[#707070] mt-5">The main purpose of the Emirates Reliability Program is to establish and continuously monitor the <br> maintenance program  effectiveness for the fleet of Emirates aircraft and through continual monitoring <br> provides case evidence to trigger investigations in adverse trends and/or   support the effectiveness of the <br> maintenance program during escalation or de-escalation investigations by maintenance planning.</h1>
-
-        <h1 class="text-[#707070] mt-5">Technical and Reliability data pertaining to aircraft operations is gathered, analysed and periodically <br> presented in   consolidated Reliability Reports enabling technical decisions to improve aircraft safety, <br> reliability and to reduce maintenance cost. Ensures adherence to   all applicable civil aviation regulations. <br> Manage and monitor ETOPS, RVSM and Autoland reliability. Lead the Fleet Reliability Working Group <br> meetings   including setting the agenda and deciding topics for discussion. Recommend actions to Fleet <br> Managers, Fleet Engineers and Maintenance Program Manager based  on reliability data analysis and <br> insights for the purposes of optimizing the maintenance program. Reviews all reliability action item <br> responses and  validates the response is acceptable prior to closing.
-        </h1>
-
-        <h1 class="text-[#707070] mt-5">Responsible towards development of reliability metrics to be tracked across the fleet for the purposes of <br> measuring,   tracking and comparing fleet reliability. Accountable for identifying reliability trends and <br> emerging reliability issues for awareness and action by the   Fleet Manager and Engineering teams.</h1>
-
-        <h1 class="text-4xl font-medium mt-16">Engineering IT Systems</h1>
-
-        <h1 class="text-[#707070] mt-5">Emirates Engineering operates an organisation-wide, standardised digital technical environment, which is <br> managed,  maintained, and enhanced by the Engineering IT Systems section in alignment with Engineering’s <br> ENGage 2030 Digital vision.
-        </h1>
-
-        <h1 class="text-[#707070] mt-5">Engineering IT Systems provides the digital glue that enables our drive towards a paperless, automated, <br> real-time context  aware and intelligent factory for all Emirates Engineering sections.
-        </h1>
-
-        <h1 class="text-[#707070] mt-5">Ongoing investment in improving these smart digital systems ensures world-class support to all Emirates <br> Engineering sections   to get better, smarter and faster while remaining cost efficient. Some of the benefits <br> of these continuous digital investments that we constantly drive  towards are,</h1>
-
-        <li class="text-[#707070] mt-3">Highly efficient and effective digital systems to support rapid process implementation, integration and <br> information sharing</  li>
-        <li class="text-[#707070] mt-5">Safe, CyberSecure and efficient management of business functions</li>
-        <li class="text-[#707070] mt-5">Automation of business processes employing Robotic Process Automation</li>
-        <li class="text-[#707070] mt-5">Data Analytics, reporting and apps using our Data Lake and Analytics Platform</li>
-        <li class="text-[#707070] mt-5">An Intelligent, Context Aware, automated, paperless factory</li>
-        <li class="text-[#707070] mt-5">Real-Time Information availability to the right person, at the right time, at the right location with aero <br> friction</li>
-      </div>
+    <li class="relative group text-white p-2">
+      <a href="./pages/Engineering-support/support.html" class="">Engineering Support</a>
+      <!-- Dropdown -->
+      <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-72">
+          <li><a href="./pages/Engineering-support/materials.html" class="block text-sm px-4 py-4 ">Engineering Materials Management</a></li>
+          <li><a href="./pages/Engineering-support/aircraft.html" class="block text-sm px-4 py-4 ">Engineering Aircraft Procurement</a></li>
+          <li><a href="./pages/Engineering-support/project.html" class="block text-sm px-4 py-4 ">Engineering Projects</a></li>
+          <li><a href="./pages/Engineering-support/training.html" class="block text-sm px-4 py-4 ">Engineering Training</a></li>
+          <li><a href="./pages/Engineering-support/technical.html" class="block text-sm px-4 py-4 ">Engineering Technical Services</a></li>
+          <li><a href="./pages/Engineering-support/planning.html" class="block text-sm px-4 py-4 ">Engineering Planning & IT Systems</a></li>
+          <li><a href="./pages/Engineering-support/facilities.html" class="block text-sm px-4 py-4 ">Engineering Facilities</a></li>
+        </ul>
+    </li>
+    
+    <li class="relative group text-white p-2">
+      <a href="./pages/Compliance Monitoring/compliance-monitoring.html" class="">Compliance Monitoring</a>
+      <!-- Dropdown -->
+      <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-80">
+          <li><a href="./pages/Compliance Monitoring/department.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Department</a></li>
+          <li><a href="./pages/Compliance Monitoring/engineering.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Engineering</a></li>
+          <li><a href="./pages/Compliance Monitoring/regulatory-affairs.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Regulatory Affairs</a></li>
+          <li><a href="./pages/Compliance Monitoring/certification.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Certification</a></li>
+        </ul>
+    </li>
+    <li class="text-white p-2">
+      <a href="./Engineering-Equipment.html">Engineering Equipiment</a>
+    </li>
+    <li class="text-white p-2">
+      <a href="./careers.html">Careers</a>
+    </li>
+  </ul>
+  <!-- End of Desktop Navigation -->
+  <div
+    id="sideNav"
+    class="fixed top-0 right-0 bg-gray-600 w-0 h-full flex overflow-x-hidden duration-500 z-10 lg:hidden"
+  >
+    <div
+      class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48"
+    >
+      <a href="javascript:void(0)" onclick="exitNav()"
+        ><img src="../../images/icon-close.svg" alt="Close logo"
+      /></a>
     </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="container">
+      <ul class="text-center flex flex-col items-center text-2xl font-sans mt-36 sm:text-3xl ">
+          <li class="relative z-20 group text-white p-2">
+              <a href="./pages/Aircraft-maintainance/aircraft.html" class="">Aircraft Maintenance</a>
+              <!-- Dropdown -->
+              <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-52">
+                <li><a href="./pages/Aircraft-maintainance/line.html" class="block text-sm px-4 py-4 ">Line Maintenance</a></li>
+                <li><a href="./pages/Aircraft-maintainance/base.html" class="block text-sm px-4 py-4 ">Base Maintenance</a></li>
+                <li><a href="./pages/Aircraft-maintainance/Overhaul.html" class="block text-sm px-4 py-4 ">Overhaul workshops</a></li>
+                <li><a href="./pages/Aircraft-maintainance/Maintenance.html" class="block text-sm px-4 py-4 ">Engine Maintenance center</a></li>
+                <li><a href="./pages/Aircraft-maintainance/Text.html" class="block text-sm px-4 py-4 ">Engine Text cell</a></li>
+                <li><a href="./pages/Aircraft-maintainance/Apperance.html" class="block text-sm px-4 py-4 ">Aircraft Apperance center</a></li>
+              </ul>
+            </li>
+  
+            <li class="relative z-10 group text-white p-2">
+              <a href="./pages/Engineering-support/support.html" class="">Engineering Support</a>
+              <!-- Dropdown -->
+              <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-72">
+                  <li><a href="./pages/Engineering-support/materials.html" class="block text-sm px-4 py-4 ">Engineering Materials Management</a></li>
+                  <li><a href="./pages/Engineering-support/aircraft.html" class="block text-sm px-4 py-4 ">Engineering Aircraft Procurement</a></li>
+                  <li><a href="./pages/Engineering-support/project.html" class="block text-sm px-4 py-4 ">Engineering Projects</a></li>
+                  <li><a href="./pages/Engineering-support/training.html" class="block text-sm px-4 py-4 ">Engineering Training</a></li>
+                  <li><a href="./pages/Engineering-support/technical.html" class="block text-sm px-4 py-4 ">Engineering Technical Services</a></li>
+                  <li><a href="./pages/Engineering-support/planning.html" class="block text-sm px-4 py-4 ">Engineering Planning & IT Systems</a></li>
+                  <li><a href="./pages/Engineering-support/facilities.html" class="block text-sm px-4 py-4 ">Engineering Facilities</a></li>
+                </ul>
+            </li>
+            
+            <li class="relative group text-white p-2">
+              <a href="./pages/Compliance Monitoring/compliance-monitoring.html" class="">Compliance Monitoring</a>
+              <!-- Dropdown -->
+              <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-80">
+                  <li><a href="./pages/Compliance Monitoring/department.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Department</a></li>
+                  <li><a href="./pages/Compliance Monitoring/engineering.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Engineering</a></li>
+                  <li><a href="./pages/Compliance Monitoring/regulatory-affairs.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Regulatory Affairs</a></li>
+                  <li><a href="./pages/Compliance Monitoring/certification.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Certification</a></li>
+                </ul>
+            </li>
+            <li class="text-white p-2">
+              <a href="./Engineering-Equipment.html">Engineering Equipiment</a>
+            </li>
+            <li class="text-white p-2">
+              <a href="./careers.html">Careers</a>  
+            </li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+
+<div
+  onclick="exitNav()"
+  id="sideBar"
+  class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10"
+></div>
+  
+</header>
+<!-- Header ends here -->
+
+
+    
 
 
 
