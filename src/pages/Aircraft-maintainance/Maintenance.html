@@ -176,6 +176,113 @@
               </div>
               <div class="space-y-5">
                 <!-- engine maintenance centre -->
+                <div class="relative inline-block text-left md:hidden">
+                  <!-- Button -->
+                  <button
+                    class="flex justify-between my-5 mt-5 w-full border-[1px] border-gray-300 px-5 space-x-48 py-4 bg-white text-sm font-medium text-gray-700 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black"
+                    id="menu-button"
+                    onclick="toggleDropdown()"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                  <div>
+                    Engine Maintenance Centre
+                  </div>
+                  
+                    <svg
+                      class="-mr-1 ml-2 h-5 w-5 text-red-400"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                
+                  <!-- Dropdown Menu -->
+                  <div
+                    id="dropdown-menu"
+                    class="hidden right-0 mt-2 w-[100] bg-white border border-black ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="menu-button"
+                  >
+                    <div class="py-1" role="none">
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Line Maintenance
+                      </a>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Base Maintenance
+                      </a>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Overhaul Workshops
+                      </a>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Engine Maintenance Centre
+                      </a>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Engine Test Cell
+                      </a>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Aircraft Appearance Centre
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- JavaScript -->
+                <script>
+                  function toggleDropdown() {
+                    const menu = document.getElementById("dropdown-menu");
+                    menu.classList.toggle("hidden");
+                  }
+                
+                  // Close dropdown if clicked outside
+                  document.addEventListener("click", function (event) {
+                    const button = document.getElementById("menu-button");
+                    const menu = document.getElementById("dropdown-menu");
+                
+                    if (!button.contains(event.target) && !menu.contains(event.target)) {
+                      menu.classList.add("hidden");
+                    }
+                  });
+                </script>
+                
                 <div class="space-y-5">
                   <h1 class="font-semibold text-4xl">
                   Engine Maintenance Centre
